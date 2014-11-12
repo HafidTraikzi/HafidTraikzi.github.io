@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<title>Web romance</title>
+	<meta charset="utf-8">
+	<link rel ="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+	<div class="container">
+		<header class="header">
+		<p class="font-size">Le journal d'Hafid</p>
+		<p class="up">Confession intime d'un développeur web...</p>
+		</header>
+		<div class="menu">
+			<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="lesdessousdecharme.html">Les dessous de charme</a></li>
+			</ul>
+		</div>
+		<div class="page">
+		<h1 class="color">TDD (Rencontre avec Roberto)</h1>
+		<img src="http://www.demotivateur.fr/images-buzz/1054/Screen-shot-2014-09-23-at-11.45.12-AM%20%281%29.png">
+		<p>Bienvenue dans mon univers où se mélent testostèrone, sensualité et code.</p>
+		<p>Tout commença par la lecture d'une petite annonce :</p>
+		<p class="italic">"Homme viril cherche partenaire désireux de s'ouvrir au monde Agile. Pas sérieux s'abstenir."</p> 
+		<p>Par une nuit sombre et chaude, je fis une rencontre à Miami, ville de tous les excés, qui je ne le savais pas encore, mais aller boulverser en profondeur ma vie. Je fis la rencontre d'un certain Roberto, un homme d'âge mûr, brun, assez grand, qui allait m'initier au plaisir du langage Ruby. Je n'étais qu'un jeune puceau sachant coder à peine le HTML. Etais-je réellement prêt ? Le Ruby était sexy selon lui. Il n'allait pas tarder à me transmettre sa fièvre. Mais avant d'aller plus loin, je souhaiterais vous racontez comment dans son initiation, au travers de club, il me forma au TDD - Test Driven Development. Le début de notre relation. Naissance de la sensualité entre nous. Jamais je ne pourrais oublier.<p>
+		<p>Tout d'abord, en lisant son annonce, je me suis posé la question de ce qu'était cette pratique. Agile. J'étais vraiment désireux de m'ouvrir à de nouveau horizon. Je fis ma petite enquête et je découvris que la satisfaction du client était un des principes de ce club fermé. Il était question de souplesse face au changement tel le roseau qui se pliait face au vent. Très poétique en somme.</p>
+		<p>Avant toute chose, je pris mon combiné téléphonique et contacta Roberto. Après quelques échanges, nous décidâmes de nous rencontrer dans un club Agile. Le Red Hat Linux.
+		<p>Je me souviens, alors que j'avais répondu positivement à l'annonce de Roberto. Nous nous rencontrâmes dans un club Agile à Miami. Les enceintes crachaient de la musique electro. Dans une ambiance enfumée et moite, nous échangions nos désirs de former un couple. L'entente fut directe. Il me proposa de me faire découvrir le Fizzbuzz en TDD. Un exercice, en fait. Je n'étais qu'un novice mais j'avais soif d'apprendre. J'étais tout excité à cette nouvelle.</p>
+		<p>Roberto voulait absolument que l'on commence sur de bonne base, je ne savais pas encore si cela allait durer entre nous, ceci dit la régle était simple : une bonne méthode. Le TDD est une démarche visant à dialoguer avec la machine. Notre code romantique en découlerait naturellement et cela aurait pour but de nous éviter de longues heures de debbugage et de disputes au sein de notre couple. Mais pas seulement, cela nous permettrait de comprendre nos besoins et de livrer des fonctionnalités de façon efficace et prévisible. J'aimais ce sentiment de sécurité. Nous étions plus flexible face aux changements dans notre couple et beaucoup plus fiable.</p>
+		<p>Roberto était un romantique, il ne pouvait concevoir de coder seul, il lui fallait forcement un partenaire. Ma curiosité venait se greffer parfaitement à son désir d'être accompagné. Les Agilistes aiment être des couples.</p>
+		<p>Le premier soir, nous rentrâmes à l'hôtel. Nous enlevâmes nos vestes respectives et nous nous posâmes sur le canapé. Peut-être était-ce précipité ? Roberto ouvrit son ordinateur portable. Il tourne sous Linux que je connais un peu. Nous étions bien éméché. D'entrée, il se diriga vers la console du terminal et ouvre VI, un éditeur de texte, très sommaire mais efficace. Ruby est installé sur sa machine. Il appella une librairie avec require "minitest/autorun" et nomma une classe avec comme chemin MiniTest::Unit. Puis il me dit avec son accent ténébreux : "Tiens, prends la machine." 
+		<p>Je ne savais pas par où commencer. Je peinais avec le TDD. Je m'enfoncais dans le red, l'erreur autrement dit. Quand soudain Roberto prit fermement ma main posée sur la souris. Je sentais la chaleur qui se dégageait de lui. Je sentais son coeur battre au travers de sa main. Il me donna des instructions que j'executais immédiatement, non dit-il, assert_equal "1", fizzbuzz(1) me dit-il, je m'execute. Je le sens sûr de lui. Il me demande de créer une Methode fizzbuzz avec pour argument number. Mon coeur commence à vibrer à son rythme. Il clique sur mon doigt dans un chevauchement avec la souris. J'ai chaud. Oui ! On passe au vert. Utilise le modulo, il me dit. Oui ! Vert. Refactoring c'est-à-dire l'optimisation de notre code. Encore, vert. Quel bonheur !</p>
+		<p>Nous passâmes la nuit entière à coder, jamais je n'avais connu un tel déchénement de plaisir. Je sentais pour la première fois que j'avais le contrôle. Les tests c'était la sécurité de coder proprement en evitant toute duplication de code par exemple. D'écrire juste ce qu'il faut de code.<p>
+		<p>Je venais de découvrir le kata sutra, une multitude d'exercices, les katas, dans des positions différentes afin de varier les plaisirs et sa dextérité. Bien entendu, je n'avais pu pratiquer toutes les positions en une nuit. Cependant, je fus comblé par cette découverte.</p> 
+		<img src="http://img4.hostingpics.net/pics/711718katasutra.jpg">
+		<p>Voici le code que nous avons développé pendant la nuit :</p>
+<p>require "minitest/autorun"</p>
+
+<p>class FizzbuzzTest < MiniTest::Test</p>
+
+	<dd>def test_1_1</dd>
+		<dd>assert_equal "1", fizzbuzz(1)</dd>
+	<dd>end</dd>
+
+	<dd>def test_2_2</dd>
+		<dd>assert_equal "2", fizzbuzz(2)</dd>
+	<dd>end</dd>
+	
+	<dd>def test_3_fizz</dd>
+		<dd>assert_equal "Fizz", fizzbuzz(3)</dd>
+	<dd>end</dd>
+
+	<dd>def test_5_buzz</dd>
+		<dd>assert_equal "Buzz", fizzbuzz(5)</dd>
+	<dd>end</dd>
+	
+	<dd>def test_15_fizzbuzz</dd>
+		<dd>assert_equal "FizzBuzz", fizzbuzz(15)</dd>
+	<dd>end</dd>
+
+	<dd>def test_45_fizzbuzz</dd>
+		<dd>assert_equal "FizzBuzz", fizzbuzz(45)</dd>
+	<dd>end</dd>
+<p>end</p>
+
+	<p>def fizzbuzz(number)</p>
+		
+		<dd>if chiffre %15 == 0</dd>
+		<dd>"FizzBuzz"</dd>
+
+		<dd>elsif chiffre %3 == 0</dd>
+		<dd>"Fizz"</dd>
+
+		<dd>elsif chiffre %5 == 0</dd>
+		<dd>"Buzz"</dd>	
+
+		<dd>else chiffre.to_s</dd>
+		<dd>end</dd>
+	<p>end</p> 
+		<p>Depuis Roberto, retourna dans son pays où il décida de mener une vie simple loin de la débauche des clubs. Réaliser des salades de pomme de terre, voila son rêve. Roberto trouvait que je changea énormément. En effet, le TDD m'avait profondément transformé. Je suis devenu un autre homme.</p>
+		<p>Bisou Roberto !</p>
+		<h1 class="color">Le Binaire (Le sens de la vie)</h1>
+		<img src="http://www.babelio.com/users/AVT_Dalai-Lama_336.jpeg">
+		<p>Par un matin d'automne, un jour, aussi loin que je m'en souvienne, je me suis mis en tête de découvrir le mystère qui entourait le sens de la vie. Ma quête me mena vers bien des interrogations jusqu'au jour où j'appris sur un forum que le sens de la vie était 42. Pourtant cela ne résolu pas le mystère et je voulus découvrir à tout prix le sens qui s'y cache. C'est alors à ce moment là que je pensa au Dalai Lama. C'était évident ! En tant que célèbre codeur, il pourrait m'eclairer. Je décida de prendre un billet d'avion pour le Tibet.
+		<p>Arrivé sur place, on me guida vers le village le plus proche. La vue désertique était magnifique, il faisait chaud. Je m'approchais en short, transpirant, des villageois aux alentours. Quant un homme, la démarche assurée, plutôt musclé, s'approcha de moi. Il craqua son marcel. Cela devait être un gradé, surement le chef du village. Je lui fis signe d'un boujour.<p>
+		<p>Après nous être salués, nous discutâmes un peu dans sa hute quand je décida de lui poser la question sur le sens de 42. Il ne semblait pas savoir. Il me répondit que cela avait peut-être un lien avec le binaire. J'étais stupéfait mais je ne connaissais pas le binaire. Le chef du village voula bien m'enseigner.</p>
+		<p>Il commança par m'expliquer le système décimal :</p>
+		<p>En fait pour écrire 1984, on décompose de la manière suivante : 4 x 10^0 = 4, 8 x 10^1 = 80, 9 X 10^2 = 900 et 1 X 10^3 = 1000. Ce qui nous donne 1984 une fois additionné.</p>
+		<p>Il existe plusieurs base : base 2 (0, 1), base 10 (0,1,2,3,4,5,6,7,8,9), base 16 (0 à 9, A,B,C,D,E,F) par exemple.<p/>
+		<p>Il me disait que notre numérotation allait de 0 à 9 et que pour passer à 10 il fallait décaler de 1 et rajouter un 0, une fois arrivé à 9. Que pour le binaire c'était la même chose. A 0, c'est 0. A 1, c'est 1, et à 2 on revient à 0 et on ajoute un 1 devant. Pour 3, cela fait 11 (1 et 1).</p>
+		<p>Ensuite on a trouvé que c'était chiant de compter un à un. Si je voulais savoir combien fait 42 en binaire, il me fallait une méthode plus efficace. C'est la que notre introduction au décimal est intéressante. Si on compte les puissances de 2, nous avons 1, 2, 4, 8, 12, 32 par exemple. A chaque puissance de 2, on a un bit. Tous les 8 bit, on a 1 octet. Il faut savoir que le binaire se lit en paquet d'octet. Pour avoir 42, je dois mettre un 1 a 32, un 1 à 8 et un 1 au 2. Ce qui fait 42 soit 00101010 en binaire. Le chiffre le plus à droite est dit faible car il a peu d'impact, on ne varit que de 1 et le plus à gauche est dit fort.</p>
+		<p>La conversion en héxadécimal de 1111 nous donnait F car 8+4+2+1 = 15. 15 étant égal à F en base 16. On pouvait additionner aussi des nombre binaire 1000 + 0101 = 1101 soit 8 + 5 = 13. Et pour mettre 1 et 2 à la suite on écrivait ainsi en binaire 0000000100000010</p>
+		<p>Nous avons essayé de dechiffrer ce que voulait dire 00101010 en vain. C'est alors que le chef du village décida de m'emmener chez le Dalai Lama afin d'avoir une réponse. Une fois arriver, je lui posais la question pourquoi 42 ?</p>
+		<p>Le Dalai Lama me répondit pourquoi dans Terminator, la machine Terminator n'empeche pas tout simplement la rencontre entre Sara Connor et le futur père de John Conner ?</p>
+		<p>Je restais sans voix, tout ce chemin pour ça, j'avais le sentiment d'avoir encore plus d'interrogation. Je décida de me lever et de péter la gueule au Dalai Lama.</p>
+		<img src="http://img4.hostingpics.net/pics/351121ryu1.jpg">
+		<p>Dans un dernier souffle il me dit : "Mon..ty Python". J'avais compris. Le sens caché se trouvait dans le langage Python et je n'allais pas tarder à le découvrir.</p>
+		<h1 class="color">Python (Monty?)</h1>
+		<img src="http://img4.hostingpics.net/pics/745306hommeslip.jpg">
+		<p>A suivre...</p>
+		</div>
+		<footer class="foot">
+		<p>Ce blog a été élu "page web virile de l'année 2014" en Iran<p>
+		</footer>
+	</div>
+</body>

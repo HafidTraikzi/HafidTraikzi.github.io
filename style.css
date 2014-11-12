@@ -1,0 +1,21 @@
+.background {background-color:pink;}
+
+.container {margin-left:25%; width:60%; border:0.1em solid; text-align:justify; font-size:small; box-shadow:-10px -8px 5px 0px rgba(50, 50, 50, 0.4); -webkit-border-radius:2em; background-color:white;}
+
+.header {padding-left:1em; background-image:url(http://img15.hostingpics.net/pics/123832sakura.jpg);}
+
+.menu {border-top:0.2em solid; border-bottom:0.2em solid; background-color:#D11661;}
+.menu li {display:inline; padding-right:2em; font-size:1.5em}
+a:hover {color:pink;}
+
+.font-size {font-size:3em;}
+
+.up {margin-top:-4%; padding-left:1em; color:brown;}
+
+.page {padding-left:1em; width:70%}
+
+.color {color:brown; padding:0.5em; -webkit-border-radius:2em; background-color:pink;}
+
+.italic {font-style:italic;}
+
+.foot {padding:1em; border-top:0.2em solid; -webkit-border-bottom-left-radius:2em; -webkit-border-bottom-right-radius:2em; background-color:#D11661;}
